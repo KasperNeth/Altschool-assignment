@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <title>Media</title>
+  </head>
+  <body>
+      <!-- Fragment identifier -->
+      <a id="backup"></a>
+    <nav>
+      <a href=".">Home</a>
+      <a href="./table.html">Table</a>
+      <a href="">Media</a>
+    </nav>
+
+    <h1>Media Element</h1>
+    <!-- image -->
+    <figure>
+      <img
+        src="./assets/images/what.png"
+        alt="StudentPicture"
+        width=""
+        height="700"
+      />
+      <figcaption>
+        Name:Adeoye Okeowo,student of Altschoolafrica.School of Engineer on the
+        Backend track.
+      </figcaption>
+    </figure>
+    <!-- Audio-->
+    <h2>Audio About Myself</h2>
+    <div class="audio">
+      <audio
+        src="./assets/audio/PersonalRecording.ogg"
+        controls
+        autoplay
+        muted
+        preload="metadata"
+      ></audio>
+    </div>
+    <!-- Video  -->
+    <h2>Video section with multiple video type</h2>
+    <div>
+      <video
+        controls
+        loop
+        muted
+        preload="metadata"
+        width="500"
+        crossorigin="anonymous"
+      >
+        <source src="./assets/videos/savethedate.mp4" type="video/mp4" />
+        <source src="./assets/videos/doubtingGod.WebM" type="video/WebM" />
+        <source src="./assets/videos/churchvideo.Ogg" type="video/Ogg" />
+        Your browser does not support this video.
+      </video>
+    </div>
+    <!-- Picture -->
+
+    <h2>Picture/images of myself with the picture element</h2>
+    <picture>
+      <!-- For mobile screen -->
+      <source
+        srcset="assets/images/okeowo.webp"
+        type="image/jpeg"
+        media="(min-width:350px) and (max-width: 769px)"
+      />
+      <!-- For Tablet screen -->
+
+      <source
+        srcset="assets/images/School-ID.jpeg"
+        type="image/jpeg"
+        media="(min-width:770px) and (max-width:1024px)"
+      />
+      <!-- For laptop screen -->
+      <source
+        srcset="assets/images/what.png"
+        type="image/jpeg"
+        media="(min-width:1025px) and (max-width:1440px)"
+      />
+      <img
+        src="./assets/images/fh_video.jpg"
+        alt="AltschoolPic Does not support your browser
+"
+        width="500"
+      />
+      <!-- Larger screen size -->
+    </picture>
+    <a href="#backup">back to top</a>
+  </body>
+</html>

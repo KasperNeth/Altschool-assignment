@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+  --image-ground-color: #fffbfb;
+  --telephone-color: #000;
+  --footer-text-color: #070303e8;
+  --footer-icon-color: #007bff;
+  --text-parag-color: #5a5959d8;
+  --input-background-color: #f5f5f5;
+  --input-color: #000000b2;
+  --button-background-color: #337fcf;
+  --button-color: #fff;
+  --button-hover-color: #0056b3;
+  --label-color: #000000;
+}
+
+  a {
+  text-decoration: none;
+}
+
+/* Form portal css */
+
+#main-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#image-background-color-section {
+  background: var(--image-ground-color);
+  width: 90%;
+  height: 60%;
+}
+
+span img {
+ padding: 3rem 3rem 0 4rem;
+  width: 90%;
+}
+
+#text-container h1 {
+  text-align: center;
+  line-height: 1.4;
+  font-size: 3rem;
+}
+
+footer{
+ text-align: center;
+ margin-top: 2rem;
+ 
+}
+
+.Tel{
+color: var(--telephone-color);
+line-height: 2;
+font-size: small;
+}
+.footer-text{
+  color: var(--footer-text-color);
+  font-size: 0.9rem;
+}
+
+.fa-brands{
+color: var(--footer-icon-color);
+letter-spacing: 0.6rem;
+line-height: 2;
+}
+
+/* end of image css section */
+
+
+.text-parag {
+  text-align: right;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+[href="//" ]{
+  color: var(--footer-icon-color);
+}
+
+.text-parag-1{
+  line-height:2;
+  color: var(--text-parag-color);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+#main-form-grid-container {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1.5rem;
+ padding-right: 7.5rem;
+
+}
+
+input[type="text"],input[type="tel"],input[type="password"],input[type="date"],select,input[type="email"]{
+  width: 100%;
+  padding: 1rem 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  background-color: var(--input-background-color);
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  color: var(--input-color);
+  outline: none;
+}
+
+label{
+  font-size: 1rem;
+  color: var(--label-color);
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="tel"]:focus,select:focus{
+  border: 1px solid var(--footer-icon-color);
+}
+
+.full-length {
+  grid-column: 1 / span 2;
+}
+
+button {
+  width: 100%;
+  grid-column: 1 / span 2;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.fa-solid{
+  color: var(--button-color);
+  font-size: 1rem;
+  width: 7%;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: 2px 6px 0 2px rgba(202, 196, 196, 0.164);
+  transition: all 0.3s;
+}
+.terms{
+ grid-column: 1 / span 2;
+  color: var(--text-parag-color);
+  font-size: 1.1rem; 
+}
+[href="///" ]{
+  color: #2073cc;
+}
+
+/* End of form portal css */
+
+@media screen and (max-width: 768px) {
+  #main-image-container {
+    display: none;
+  }
+  .text-parag {
+    text-align: center;
+  }
+  h2,.text-parag-1{
+    padding-left:1rem;
+  }
+  #main-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #main-form-grid-container {
+    padding-right:1rem;
+    padding-left: 1rem;
+  }
+}
